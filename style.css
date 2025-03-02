@@ -4,7 +4,7 @@ body {
     color: rgb(84, 7, 7);
     margin-top: 50%;
     line-height: 1,6;
-    background-image: url(/image/logo3.webp);
+    background-image: url(image/logo3.webp);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
