@@ -1,0 +1,78 @@
+// _animaciones.scss
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .navbar {
+    animation: slideDown 0.8s ease-out;
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    img {
+      height: 100px;
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  .navbar-nav {
+    .nav-link {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(84, 7, 7) !important;
+      transition: color 0.3s, transform 0.3s;
+    
+      &:hover {
+        color: #007bff !important;
+        transform: translateY(-3px);
+      }
+    }
+  }
+  
+  @keyframes buttonPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background: #0056b3;
+      animation: buttonPulse 0.3s ease-out;
+    }
+  }
+  
+  
